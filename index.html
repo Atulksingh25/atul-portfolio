@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atul K Singh - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: 'Roboto', sans-serif; background:#1e1e2f; color:#e0e0e0; scroll-behavior:smooth; }
+  a { text-decoration:none; color: inherit; }
+
+  header { background:#4b0082; color:#fff; padding:1rem 2rem; position:sticky; top:0; z-index:1000; }
+  header h1 { margin:0; font-size:2rem; }
+  nav { margin-top:0.5rem; }
+  nav a { margin-right:1.5rem; color:#fff; font-weight:500; transition:0.3s; }
+  nav a:hover { text-decoration:underline; }
+
+  .hero { padding:4rem 2rem; text-align:center; background: linear-gradient(135deg, #4b0082, #8a2be2); color:white; }
+  .hero h2 { font-size:2.5rem; margin-bottom:1rem; }
+  .hero p { font-size:1.2rem; }
+
+  section { padding:4rem 2rem; max-width:1000px; margin:auto; }
+  .about p { font-size:1.1rem; line-height:1.6; }
+
+  .project-card { background:#2c2c3e; border-radius:10px; padding:1.5rem; margin:2rem 0; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:transform 0.3s ease, box-shadow 0.3s ease; }
+  .project-card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+  .project-card h3 { margin-top:0; color:#ff7f50; }
+  .project-card p { margin:0.5rem 0 1rem; color:#dcdcdc; }
+  .project-card a { display:inline-block; background:#8a2be2; color:white; padding:0.5rem 1rem; border-radius:5px; transition:0.3s; }
+  .project-card a:hover { background:#5d00b3; }
+
+  .skills { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
+  .skill { background:#4b0082; color:white; padding:0.5rem 1rem; border-radius:5px; font-weight:500; }
+
+  .achievements { background:#2c2c3e; border-radius:10px; padding:1.5rem; margin:2rem 0; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+  .achievements h3 { color:#ff7f50; margin-bottom:1rem; }
+  .achievements ul { list-style: disc; padding-left:1.5rem; }
+  .achievements li { margin-bottom:0.5rem; }
+
+  .contact a { display:inline-block; background:#ff4500; color:white; padding:0.5rem 1rem; border-radius:5px; transition:0.3s; margin-right:1rem; margin-bottom:0.5rem; }
+  .contact a:hover { background:#c13500; }
+
+  footer { text-align:center; padding:2rem; background:#1b1b2f; color:white; font-size:0.9rem; }
+
+  @media(max-width:768px){
+    nav a { display:block; margin-bottom:0.5rem; }
+    .skills { justify-content:center; }
+    .contact a { display:block; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Atul K Singh</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Frontend Developer</h2>
+  <p>Building modern, responsive, and interactive web applications. Flagship projects and skills showcased below.</p>
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>Hello! I am Atul, a passionate Frontend Developer focused on creating modern, responsive, and user-friendly web applications. I combine clean code with creative design, ensuring smooth user experience. My work reflects attention to detail, interactivity, and scalability.</p>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="project-card">
+    <h3>Shopping Website</h3>
+    <p>A fully responsive shopping website built using HTML, CSS, and JavaScript. Features interactive product cards, modals, and smooth animations.</p>
+    <a href="https://shoppig-website25.vercel.app/" target="_blank" rel="noopener">View Live Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Travellist Project</h3>
+    <p>A travel listing web application built with HTML, CSS, and JavaScript. Includes interactive UI elements and responsive design for seamless browsing on any device.</p>
+    <a href="https://travellist-nznud5h6c-atulksingh25s-projects.vercel.app/" target="_blank" rel="noopener">View Live Project</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Redux</div>
+    <div class="skill">Advanced React</div>
+    <div class="skill">Express.js</div>
+    <div class="skill">AI Tools</div>
+    <div class="skill">DSA Basics</div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="achievements">
+    <h3>Internship & Practice</h3>
+    <ul>
+      <li>Web Development Internship at <strong>Darkhole</strong> (Oct 2024 – Apr 2025)</li>
+      <li>30 Mini Projects Completed</li>
+      <li>500 Exercises Solved</li>
+      <li>100 Feature Practices in ReactJS</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to discuss a project or opportunity, feel free to reach out!</p>
+  <div class="contact">
+    <a href="tel:+918719977713">+91 8719977713</a>
+    <a href="tel:+919993499294">+91 9993499294</a>
+    <a href="mailto:atulksingh.25092@gmail.com">atulksingh.25092@gmail.com</a>
+    <a href="https://github.com/Atulksingh25" target="_blank" rel="noopener">GitHub Profile</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Atul K Singh. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
