@@ -17,6 +17,7 @@
   nav a:hover { text-decoration:underline; }
 
   .hero { padding:4rem 2rem; text-align:center; background: linear-gradient(135deg, #4b0082, #8a2be2); color:white; }
+  .hero img { width:150px; height:150px; border-radius:50%; object-fit:cover; border:4px solid white; margin-bottom:1rem; }
   .hero h2 { font-size:2.5rem; margin-bottom:1rem; }
   .hero p { font-size:1.2rem; }
 
@@ -33,10 +34,12 @@
   .skills { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
   .skill { background:#4b0082; color:white; padding:0.5rem 1rem; border-radius:5px; font-weight:500; }
 
-  .achievements { background:#2c2c3e; border-radius:10px; padding:1.5rem; margin:2rem 0; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
-  .achievements h3 { color:#ff7f50; margin-bottom:1rem; }
+  .achievements, .certificates { background:#2c2c3e; border-radius:10px; padding:1.5rem; margin:2rem 0; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+  .achievements h3, .certificates h3 { color:#ff7f50; margin-bottom:1rem; }
   .achievements ul { list-style: disc; padding-left:1.5rem; }
   .achievements li { margin-bottom:0.5rem; }
+
+  .certificate-img { width:100%; max-width:600px; border-radius:10px; display:block; margin:auto; border:3px solid #4b0082; }
 
   .contact a { display:inline-block; background:#ff4500; color:white; padding:0.5rem 1rem; border-radius:5px; transition:0.3s; margin-right:1rem; margin-bottom:0.5rem; }
   .contact a:hover { background:#c13500; }
@@ -59,11 +62,13 @@
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#achievements">Achievements</a>
+    <a href="#certificates">Certificates</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
+  <img src="https://scontent.fbho4-5.fna.fbcdn.net/v/t39.30808-6/460156873_3646002108984338_8680177759397277417_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BvWCRYUGBsMQ7kNvwFNP9QK&_nc_oc=AdmepNsYpXP42Sz4soh-Nebr41fOOy22W5vahg7wZwvrBdtvLUfJ-vkQqz-_73fLaBQklF0q8C60aLhKnkDMUc75&_nc_zt=23&_nc_ht=scontent.fbho4-5.fna&_nc_gid=JDArqBv48qc9yWdPYvQTtQ&oh=00_AfdfXwC7LSng2UE93pUNulvz_z1fs_i7Vg0uzTnpwFqX2Q&oe=6902241F" alt="Atul Kumar Singh Profile Picture">
   <h2>Frontend Developer</h2>
   <p>Building modern, responsive, and interactive web applications. Flagship projects and skills showcased below.</p>
 </section>
@@ -117,13 +122,21 @@
   </div>
 </section>
 
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="certificates">
+    <h3>Web Developer Internship - Darkhole</h3>
+    <img src="https://scontent.fbho4-5.fna.fbcdn.net/v/t39.30808-6/571173195_4027344950850050_1740091127042784425_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4l3xni77LEMQ7kNvwFkNLmK&_nc_oc=AdlPD38xff6BOgpJ1skR7effDoKjr_Rxez1cBUwMl-JlKK-zJK3e4tSfA_o9aOVdqi6HfdvKp6fID7MAFAmpeBS8&_nc_zt=23&_nc_ht=scontent.fbho4-5.fna&_nc_gid=pA07ykUnbjyC2hKEYcnHKA&oh=00_Afc5WTyhm2hF4b24Ekl_LvoPiamGu_7BFoE9GKcnsZPYsg&oe=69024267" alt="Darkhole Certificate" class="certificate-img">
+  </div>
+</section>
+
 <section id="contact">
   <h2>Contact Me</h2>
   <p>If you’d like to discuss a project or opportunity, feel free to reach out!</p>
   <div class="contact">
     <a href="tel:+918719977713">+91 8719977713</a>
     <a href="tel:+919993499294">+91 9993499294</a>
-    <a href="mailto:atulksingh.25092@gmail.com">atulksingh.25092@gmail.com</a>
+    <a href="mailto:atulksingh.2509@gmail.com">atulksingh.25092@gmail.com</a>
     <a href="https://github.com/Atulksingh25" target="_blank" rel="noopener">GitHub Profile</a>
   </div>
 </section>
@@ -134,4 +147,3 @@
 
 </body>
 </html>
-
