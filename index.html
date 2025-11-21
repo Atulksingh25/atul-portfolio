@@ -31,6 +31,43 @@
   .project-card a { display:inline-block; background:#8a2be2; color:white; padding:0.5rem 1rem; border-radius:5px; transition:0.3s; }
   .project-card a:hover { background:#5d00b3; }
 
+  /* Mini Projects Grid */
+  .mini-projects-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
+    gap:1.5rem;
+    margin-top:2rem;
+  }
+
+  .mini-card {
+    background:#2c2c3e;
+    padding:1.2rem;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem;
+    min-height:86px;
+  }
+  .mini-card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  }
+  .mini-card h3 { margin:0; color:#ffb57f; font-size:1rem; }
+  .mini-card a {
+    display:inline-block;
+    margin-top:auto;
+    align-self:flex-start;
+    background:#8a2be2;
+    color:white;
+    padding:0.45rem 0.8rem;
+    border-radius:6px;
+    font-weight:600;
+    transition:background 0.2s;
+  }
+  .mini-card a:hover { background:#5d00b3; }
+
   .skills { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
   .skill { background:#4b0082; color:white; padding:0.5rem 1rem; border-radius:5px; font-weight:500; }
 
@@ -60,6 +97,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
+    <a href="#mini-projects">Mini Projects</a>
     <a href="#skills">Skills</a>
     <a href="#achievements">Achievements</a>
     <a href="#certificates">Certificates</a>
@@ -94,6 +132,131 @@
   </div>
 </section>
 
+<!-- ⭐ MINI PROJECTS SECTION ADDED HERE -->
+<section id="mini-projects">
+  <h2>Mini Projects (ReactJS)</h2>
+  <p style="color:#bfbfbf;">Click any card to open the live project (opens in a new tab)</p>
+
+  <div class="mini-projects-grid">
+  <div class="mini-card">
+      <h3>Digital Clock</h3>
+      <a href="https://diigital-clock-zeta.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Movie Rating App</h3>
+      <a href="https://movierating-cx4k.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Recipes Finder</h3>
+      <a href="https://recipesfinder-ge7d.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Counter With Steps Control</h3>
+      <a href="https://counter-with-steps-control.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Currency Converter</h3>
+      <a href="https://currency-converter-five-neon-34.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Search Movie App</h3>
+      <a href="https://search-movie-6k6u.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>File Upload App</h3>
+      <a href="https://file-upload-app-chi.vercel.app" target="_blank">Open</a>
+    </div>
+
+    <div class="mini-card">
+      <h3>Dictionary App</h3>
+      <a href="https://dictionary-app-teal-xi.vercel.app" target="_blank">Open</a>
+    </div>
+    <div class="mini-card"><h3>Image Slider Carousel</h3><a href="https://image-slider-carousel.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Dark / Light Theme Toggle</h3><a href="https://dark-light-theme-toggle.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>QR Code Generator</h3><a href="https://qr-code-generator-7mkg.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Password Generator</h3><a href="https://password-generator-chi-nine-92.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Random Joke Generator</h3><a href="https://random-joke-generator-api-phi.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Stopwatch Timer</h3><a href="https://stopwatch-timer-two.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Tip Calculator</h3><a href="https://tip-calculator-eight-flax.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Guess The Numbers</h3><a href="https://guess-the-numbers-virid.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Music Player</h3><a href="https://music-player-gamma-lac.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Calculator App</h3><a href="https://calculator-app-red-eta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Word Counter</h3><a href="https://word-counter-app-pied.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Expense Tracker</h3><a href="https://expense-tracker-eta-dusky.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Drum Kit</h3><a href="https://drum-kit-xi-amber.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Modal Popup (v1)</h3><a href="https://model-popuup-u1mx.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Modal Popup (v2)</h3><a href="https://model-popuup.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Movie Search App</h3><a href="https://movie-search-brown-one.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>News App</h3><a href="https://news-app-ashen-rho.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Markdown Previewer</h3><a href="https://markdown-previewer-xi-seven.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Copy to Clipboard</h3><a href="https://copy-clipboard-rose.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Gradient Background Animation</h3><a href="https://gradient-background-animation.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Glowing Button</h3><a href="https://glowing-button-three.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Bouncing Ball Animation</h3><a href="https://bouncing-ball-animation-cyan.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Neon Text Effect</h3><a href="https://neon-text-effect-ruddy.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Image Hover Zoom Effect</h3><a href="https://image-hover-zoom-effect.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Typewriter Text Animation</h3><a href="https://typewriter-text-animation.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Responsive Navbar</h3><a href="https://responsive-navbar-ten-nu.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Glassmorphism Card</h3><a href="https://glassmorphism-card-zeta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Text Slides In Animation</h3><a href="https://text-slides-in-animation.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Text Slides In (alt)</h3><a href="https://text-slides-in-animation-jesg.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>16 Image Blur on Hover</h3><a href="https://16-image-blur-on-hover.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>News Liart</h3><a href="https://news-liart-phi.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>News Apps (alt)</h3><a href="https://news-apps-ten.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Counter App</h3><a href="https://counter-apps-lake.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Movies Booking App</h3><a href="https://movies-booking-app.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Movie Finder</h3><a href="https://movie-bookng.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Colors Changer</h3><a href="https://colors-changer.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Simple Calculator</h3><a href="https://simple-calculator-mauve-omega.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Todo App</h3><a href="https://todo-app-chi-five-36.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Search Filter (form validation)</h3><a href="https://search-filter-ecod.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Search Filter (alt)</h3><a href="https://search-filter-henna-nine.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Temperature Converter</h3><a href="https://temparature-converter-eta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Music Players (alt)</h3><a href="https://music-players-seven.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Tip Calculator (alt)</h3><a href="https://tip-calculate-opal.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Word Counter (alt)</h3><a href="https://word-counter-apps.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Color Palette / Search Movie</h3><a href="https://search-movie-swart.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>E-commerce Product Listing</h3><a href="https://e-commerce-product-listing-ten.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Portfolio Template</h3><a href="https://portfolio-website-two-ochre-55.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Blog App</h3><a href="https://blog-app-weld-beta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Admin Panel</h3><a href="https://admin-panel-eight-teal.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Restaurant Menu</h3><a href="https://resturentmenu.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Multi Step Form</h3><a href="https://multi-step-form-mauve-nine.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Countdown Timer</h3><a href="https://countdown-timer-livid-one.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Pricing Table</h3><a href="https://pricing-table-sage.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Crypto Dashboard</h3><a href="https://crypto-dashboard-ten-kohl.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Show / Hide Password</h3><a href="https://show-hide-passwword.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Tabs Feature</h3><a href="https://tabs-flame-zeta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+    <div class="mini-card"><h3>Character Counter</h3><a href="https://character-counter-9gwh.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Character Counter (alt)</h3><a href="https://character-counter-lyart.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Emoji Picker</h3><a href="https://emoji-picker-nine.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Progress Bar</h3><a href="https://progress-bar-rose.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Weather App</h3><a href="https://weatherapp-henna-zeta.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Movie Rating</h3><a href="https://movierating-yq7x.vercel.app" target="_blank" rel="noopener">Open</a></div>
+<div class="mini-card">
+    <h3>Tabs Project</h3>
+    <a href="https://tabs-g2hd.vercel.app" target="_blank" rel="noopener">Open</a>
+  </div>
+    <div class="mini-card"><h3>Random Quotes Generator</h3><a href="https://random-quotes-generator-nsbm.vercel.app" target="_blank" rel="noopener">Open</a></div>
+    <div class="mini-card"><h3>Movies Booking (alt)</h3><a href="https://movies-booking-app-zldu.vercel.app" target="_blank" rel="noopener">Open</a></div>
+
+  </div>
+</section>
+
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
@@ -115,7 +278,7 @@
     <h3>Internship & Practice</h3>
     <ul>
       <li>Web Development Internship at <strong>Darkhole</strong> (Oct 2024 – Apr 2025)</li>
-      <li>30 Mini Projects Completed</li>
+      <li>110+ Mini Projects Completed</li>
       <li>500 Exercises Solved</li>
       <li>100 Feature Practices in ReactJS</li>
     </ul>
